@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            background-color: #52b332;
+            background-image: url("https://i.imgur.com/LYqmyxM.png");
+            background-repeat: repeat;
+            background-size: 120px;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translate(100%, 0);
+            }
+
+            100% {
+                transform: translate(-100%, 0);
+            }
+        }
+
+        @-moz-keyframes spin {
+            100% {
+                -moz-transform: rotate(360deg);
+            }
+        }
+
+        @-webkit-keyframes spin {
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            100% {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        .spin {
+            animation: spin 4s linear infinite;
+        }
+
+        .body {
+            padding: 10px;
+        }
+
+        .banner {
+            display: flex;
+            background-color: black;
+            width: 100vw;
+            overflow-x: hidden;
+
+            .marquee span {
+                width: 100vw;
+                display: inline-block;
+                padding-left: 100%;
+                animation: marquee 10s linear infinite;
+            }
+
+
+            p {
+                width: 600px;
+                font-family: "Sixtyfour Convergence", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+                font-variation-settings:
+                    "BLED" 0,
+                    "SCAN" 0,
+                    "XELA" 0,
+                    "YELA" 0;
+
+            }
+
+
+        }
+
+        .panel {
+            background-color: #000000bf;
+            color: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: auto;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-family: "Source Sans 3", sans-serif;
+        }
+
+
+        .header {
+            display: flex;
+            display: flex;
+            align-items: center;
+            max-width: 701px;
+            text-align: center;
+            font-family: "Teko", sans-serif;
+            gap: 10px;
+        }
+
+        img {
+            height: 100px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+
+        p,
+        h1,
+        h2 {
+            font-family: "Teko", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+
+        .mei {
+            height: 400px;
+        }
+
+        .limited-box {
+            height: auto;
+            width: 250px;
+        }
+
+        .news {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: fit-content;
+        }
+
+        .ball {
+            height: 200px;
+        }
+
+        .donkey {
+            height: 200px;
+        }
+    </style>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
+
+<body>
+
+
+    <div class="banner">
+
+        <p class="marquee">
+            <span>THIS IS A PARODY SITE - THIS IS A PARODY SITE - THIS IS A PARODY SITE</span>
+        </p>
+    </div>
+    <div class="body">
+        <h1 class="header panel">
+            <img class="spin" src="https://i.imgur.com/Fz4cU7w.png"><img>Welcome
+            to owshrek.live, the best site for all your overwatch news, skins and leaks
+            <img class="spin" src="https://i.imgur.com/Fz4cU7w.png"><img>
+        </h1>
+        <div class="content">
+            <div class="panel news">
+                <h2>New Limited shrek edition box</h2>
+                <img class="limited-box" src="https://i.redd.it/xaftfv5vdnu01.jpg"></img>
+
+            </div>
+            <div class="panel news">
+                <h2>New Mei Fiona skin</h2> <img class="mei" src="https://i.imgur.com/zDilXUO.png"></img>
+            </div>
+            <div class="panel news">
+                <h2>Wrecking ball in boots skin</h2> <img class="ball" src="https://i.imgur.com/6r4VNO0.png"></img>
+            </div>
+            <div class="panel news">
+                <h2>Donkey Junkrat</h2> <img class="donkey" src="https://i.imgur.com/pWU6rot.png"></img>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
